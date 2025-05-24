@@ -1,0 +1,51 @@
+/* Base style for the overlay effect */
+h1[data-content] {
+  position: relative;
+  display: inline-block;
+  font-weight: 800;
+  overflow: hidden;
+}
+
+/* Overlay effect for Fintech Club with green color */
+h1.fintech-overlay {
+  color: white; /* Initial color for the main text */
+}
+
+h1.fintech-overlay::before {
+  position: absolute;
+  content: attr(data-content);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  color: #22c55e; /* Green overlay color */
+  white-space: nowrap;
+  overflow: hidden;
+  transition: height 700ms ease-in-out;
+}
+
+.box-overlay:hover h1.fintech-overlay::before {
+  height: 100%;
+}
+
+/* Overlay effect for IIT DHANBAD with white color */
+h1.dhanbad-overlay {
+  color: #22c55e; /* Initial color for the main text */
+}
+
+h1.dhanbad-overlay::before {
+  position: absolute;
+  content: attr(data-content);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  color: white; /* White overlay color */
+  white-space: nowrap;
+  overflow: hidden;
+  transition: height 700ms ease-in-out;
+}
+
+.box-overlay:hover h1.dhanbad-overlay::before {
+  height: 100%;
+}
