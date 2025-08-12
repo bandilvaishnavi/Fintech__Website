@@ -42,7 +42,7 @@ const HeroSection = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.5 }}
           >
-            IIT DHANBAD
+            Indian Institute of Technology (Indian School of Mines) DHANBAD
           </motion.h2>
           <motion.p 
             className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto"
