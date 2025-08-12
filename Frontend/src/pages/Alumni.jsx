@@ -15,7 +15,7 @@ const AlumniSection=()=> {
   alt="fic"
   className="rounded-full w-40 h-40 object-cover mx-auto mb-4"
 />
-<h3 className="text-xl font-bold text-white">Prof GN</h3>
+<h3 className="text-xl font-bold text-white">Prof Garib Nath</h3>
 
 <div className="flex justify-center gap-4">
   <a
